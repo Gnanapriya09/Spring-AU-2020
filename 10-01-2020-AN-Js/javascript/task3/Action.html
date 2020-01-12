@@ -1,0 +1,83 @@
+<html>
+<head>
+    <title>
+        User Functions
+    </title>
+    <script src="content.js"></script>
+    <style>
+        body {
+            background-image: url(bg.jpg);
+        }
+
+        .main_content {
+            padding-left: 340px;
+            width: 30%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        input {
+            float: right;
+            padding-left: 10px;
+            padding-top: 5px;
+            border-radius: 20px;
+        }
+
+        select {
+            float: right;
+            padding-top: 10px;
+            border-radius: 30px;
+        }
+
+        span {
+            padding-top: 10px;
+            font-weight: bolder;
+            color: white;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_content" >
+        <span>Name&nbsp;&nbsp;&nbsp;:</span>
+        <input id="name" type="text"><br /><br /><br />
+        <span>Country&nbsp;&nbsp;&nbsp;:</span>
+        <select id="Country">
+            <option value="Mumbai">Madurai</option>
+            <option value="Delhi" selected="selected">Chennai</option>
+            <option value="hyderabad">Bangalore</option>
+        </select> <br /><br /><br />
+        <span>Username&nbsp;&nbsp;&nbsp;:</span >
+        <input type="text" id="username" onkeyup="suggest()">
+        <br /><br /><br />
+        <div id="usernamelist" style="float:right;width:50%;border: 0.5px solid black; background-color: white; border-radius: 30px;">
+            <ul id="namelist">
+                <li>priya</li>
+                <li>kayal</li>
+                <li>haara</li>
+                <li>bala</li>
+                <li>abian</li>
+                <li>client</li>
+                <li>dance</li>
+                <li>spring</li>
+                <li>java</li>
+                <li>jofin</li>
+            </ul>
+        </div><br /><br /><br /><br /><br /><br /><br />
+
+        <div style="padding-top: 110px;">
+            <button id="Sorting"  style ="border-radius: 50px;" onclick="sorting()">Sort now</button>
+            <div id="sortinglist" style="float:right;width:50%;border: 0.5px solid black; background-color: white; border-radius: 30px;">
+                <ul id="sorting_list">
+                    <li>Gnanapriya</li>
+                    <li>Arumugam</li>
+                    <li>Mahalakshmi</li>
+                    <li>venkatesh</li>
+                </ul>
+            </div><br /><br /><br />
+        </div>
+    </div>
+</body>
+
+</html>

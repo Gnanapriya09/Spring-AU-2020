@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>
+        User login
+    </title>
+    <script src="check.js"></script>
+    <style>
+        input {
+            background-color: lightyellow;
+            border-radius: 20px;
+            height: 30px;
+            padding-left: 10px;
+        }
+
+        .User-login {
+            justify-content: center;
+            align-content: center;
+            padding-left: 480px;
+            padding-top: 30px;
+        }
+
+        body {
+            background-image: url(bgd.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="User-login">
+        <div>
+            <span><b>User Name</b></span><br />
+            <input id="u_name" type="text" placeholder="User Name"><br />
+            <span id="namemsg" style="color: red;display: none;">Username can't be null</span><br />
+            <span><b>Password</b></span><br />
+            <input id="psd" type="password" placeholder="Password"><br />
+            <span id="psd_message" style="color: red;display: none;"></span><br />
+            <span><b>Confirm Password</b></span><br />
+            <input id="confirmpsd" type="password" placeholder="Confirm Password"><br /><br />
+            <span id="confirmpsd_message" style="color: red;display: none;"></span><br /><br />
+            <button onclick="submit()"
+                style="background-color:black ;color:white;border-radius: 40px;width: 20%;height: 8%;">Submit</button><br /><br /><br />
+            <br />
+            <div id="successmsg" style="background-color:black;color:white;width:40%;padding-top: 50px;display: none; padding-left: 10px;">
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
